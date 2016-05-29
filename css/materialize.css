@@ -1,4 +1,4 @@
-in/*!
+/*!
  * Materialize v0.96.1 (http://materializecss.com)
  * Copyright 2014-2015 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
@@ -5615,7 +5615,7 @@ small {
  
 .btn-floating {
   display: inline-block;
-  color: #292929;
+  color: #FFF;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -5623,7 +5623,7 @@ small {
   height: 37px;
   line-height: 37px;
   padding: 0;
-  background-color: #292929;
+background-color: #26a69a;
   border-radius: 50%;
   transition: .3s;
   cursor: pointer;
@@ -5634,7 +5634,7 @@ small {
     text-align: center;
     color: #292929;
     font-size: 1.6rem;
-    line-height: 37px; }
+    line-height: 25px; }
   .btn-floating:before {
     border-radius: 0; }
   .btn-floating.btn-large {
@@ -5645,7 +5645,7 @@ small {
       line-height: 55.5px; }
 
 button.btn-floating {
-  border: none }
+  border: none; }
 
 .fixed-action-btn {
   position: fixed;
