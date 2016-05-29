@@ -1,4 +1,4 @@
-/*
+hom/*
 Template Name: MU Material
 Author: MarkUps
 Author URI: http://www.markups.io/
@@ -14,13 +14,7 @@ Tags: light, white,One page,Personal,Portfolio,Material,Flat,custom-colors,Multi
   #BASIC TYPOGRAPHY
   #HOME 
   #ABOUT SECTION
-  #RESUME SECTION
-  #PORTFOLIO SECTION
-  #FACTS SECTION
-  #TESTIMONIAL SECTION
-  #HOME BLOG  
-  #FOOTER 
-  #BLOG PAGE  
+  #FOOTER  
   #RESPONSIVE CSS
 
 */
@@ -56,7 +50,7 @@ h6{
 
 nav .brand-logo {    
   font-weight: bold;  
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 
@@ -96,7 +90,7 @@ nav .brand-logo img {
   left:0;
   right:0;
   bottom:0;
-  background-color:#fff; /* change if the mask should have another color then white */
+  background-color:#303030; /* change if the mask should have another color then white */
   z-index:99999; /* makes sure it stays on top */ 
 }
 
@@ -112,7 +106,7 @@ nav .brand-logo img {
 
 
 #home {
-  background-image: url("img/home-img1.jpg");
+  background-image: url("img/home-img1.png");
   background-position: 100% 100%;
   background-size: 100% 100%;
   display: inline;
@@ -142,10 +136,10 @@ nav .brand-logo img {
 
 .home-title{
   color: #fff;
-  font-size: 72px;
-  font-weight: 700;
+  font-size: 55px;
+  font-weight: 50;
   margin-bottom: 15px;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 
@@ -154,7 +148,7 @@ nav .brand-logo img {
   font-size: 18px;
   font-weight: 300;
   margin-bottom: 38px;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 
@@ -170,7 +164,7 @@ nav .brand-logo img {
 /*--------------------*/
 
 #about{
-  background-color: #fafafa;
+  background-color: #292929;
   float: left;
   display: inline;
   padding: 80px 0px; 
@@ -212,7 +206,7 @@ nav .brand-logo img {
 
 
 .about-inner-right>p{
-  color: #727272;
+  color: #e5e5e5;
   font-size: 15px;
   line-height: 28px;
   margin-bottom: 35px;
@@ -244,7 +238,7 @@ nav .brand-logo img {
 
 .personal-information ul li{
   border-bottom: 1px solid #eeeeee;
-  color: #727272;
+  color: #e5e5e5;
   font-size: 15px;
   margin-bottom: 12px;
   padding-bottom: 12px;
@@ -258,7 +252,7 @@ nav .brand-logo img {
 
 
 .pro-bar-container.color-wisteria {
-  background-color: #eee;
+  background-color: #303030;
 }
 
 
@@ -275,7 +269,7 @@ nav .brand-logo img {
 
 
 #skill{
-  background-color: #fff;  
+  background-color: #303030;  
   display: inline;
   padding: 60px 0;
   float: left;
@@ -291,7 +285,7 @@ nav .brand-logo img {
 
 
 .skill-inner p{
-  color: #727272;
+  color: #e5e5e5;
   font-size: 16px;
   line-height: 30px;
   font-weight: 400;
@@ -352,7 +346,7 @@ nav .brand-logo img {
 
 
 .experience-inner .title{
-  color: #fff;
+  color: #d7bc02;
 }
 
 
@@ -441,7 +435,7 @@ nav .brand-logo img {
 
 
 #edcuation{
-  background-color: #fafafa;
+  background-color: #292929;
   display: inline;
   padding: 60px 0;
   float: left;
@@ -453,6 +447,10 @@ nav .brand-logo img {
   display: inline;
   float: left;
   width: 100%;
+}
+
+.education-inner p {
+  color: #e5e5e5;
 }
 
 
@@ -570,6 +568,7 @@ nav .brand-logo img {
   top: 0;
   transition: border-width 0.2s ease 0s, border-color 0.2s ease 0s;
   width: 100.5%;
+
 }
 
 
@@ -687,109 +686,6 @@ transition: background-color 0.5s ease-in-out;
 }
 
 
-/*--------------------*/
-/* TESTIMONIAL */
-/*--------------------*/
-
-
-#testimonial{
-  display: inline;
-  padding: 60px 0; 
-  float: left;
-  width: 100%;
-}
-
-
-.testimonial-inner{
-  display: inline;
-  float: left;
-  width: 100%;
-}
-
-
-.testimonial-inner h2{
-  color: #fff;
-}
-
-
-.testimonial-inner p{
-  color: #fff;
-}
-
-
-.testimonial-slider-area{
-  display: inline;
-  float: left;
-  margin-top: 60px;  
-  width: 100%;
-  position: relative;
-}
-
-
-.testimonial-slider {
-  display: inline;
-  float: left;  
-  width: 100%;
-}
-
-
-.single-testimonial {  
-  background-color: #fff;
-  border-radius: 2px;
-  margin: 0.5rem 0 1rem;
-  overflow: hidden;
-  padding: 15px;
-  position: relative;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-}
-
-
-.testimonial-img {
-  display: inline;
-  float: left;
-  height: 150px;
-  width: 25%;
-}
-
-
-.testimonial-img img{
-  height: 100%;
-  width: 100%;
-}
-
-
-.testimonial-content{
-  float: left;
-  display: inline;
-  padding-left: 15px;
-  width: 75%;
-
-}
-
-
-.testimonial-content h3 {
-  float: left;
-  font-size: 24px;
-  margin-bottom: 0px;
-  margin-top: -10px;
-  text-align: left;
-  width: 100%;
-}
-
-
-.testimonial-content > span {
-  color: #777777;
-  display: block;
-  font-size: 13px;
-}
-
-
-.testimonial-content p{
-  color: #777777;
-  font-style: italic;
-}
-
-
 .prev2 {
   left: -8%;
   margin-top: 8.3%;
@@ -803,136 +699,6 @@ transition: background-color 0.5s ease-in-out;
   right: -6%;
 }
 
-
-/*--------------------*/
-/* BLOG */
-/*--------------------*/
-
-
-#blog{
-  background-color: #fafafa;
-  display: inline;
-  float: left;
-  padding: 60px 0;
-  width: 100%;
-}
-
-
-.blog-inner{
-  display: inline;
-  float: left;
-  width: 100%;
-}
-
-
-.blog-area{
-  display: inline;
-  float: left;
-  margin-top: 50px;
-  width: 100%;
-}
-
-
-.blog-post{
-  display: inline;
-  float: left;
-  width: 100%;
-}
-
-
-.blog-post-content {
-  padding-top: 0 !important;
-}
-
-
-.blog-post-content h2,
-.blog-post-content h2 a {
-  font-size: 20px;
-  line-height: 25px;
-  margin-bottom: 5px;
-  margin-top: 0;
-  text-align: center;
-}
-
-
-.meta-media {
-  float: left;
-  margin-bottom: 15px;
-  text-align: center;
-  width: 100%;
-}
-
-
-.single-meta {
-  color: #777;
-  display: inline-block;
-  margin-right: 10px;
-}
-
-
-.blog-post .card-action {
-  float: left;
-  padding: 15px;
-  width: 100%;
-}
-
-
-.blog-post .card .card-image {
-  padding: 5px;
-}
-
-
-.post-comment{
-  display: inline-block;
-  float: left;
-}
-
-
-.post-comment i {
-  display: inline-block;
-  float: left;
-  font-size: 20px;
-  line-height: 27px;
-  margin-right: 3px;
-}
-
-
-.post-comment span {
-  display: inline-block;
-  font-size: 16px;
-}
-
-
-.readmore-btn{
-  border-radius: 1px;
-  font-size: 13px;
-  font-weight: 500;
-  float: right;
-  padding: 4px 0 4px 10px;
-  text-transform: uppercase;
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  
-}
-
-
-.readmore-btn:hover{
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  color: #fff !important;
-  padding-right: 10px;
-}
-
-
-.allpost-btn,
-.allpost-btn:hover{
-  background-color: #fff;
-  color: #727272;
-  font-size: 14px;
-  margin-top: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
 
 
 /*--------------------*/
@@ -963,7 +729,7 @@ transition: background-color 0.5s ease-in-out;
 
 
 .footer-top-inner>h2{
-  color: #fff;
+  color: #d7bc02;
 }
 
 
@@ -981,7 +747,7 @@ transition: background-color 0.5s ease-in-out;
 
 
 .contact-form {
-  background: #fff none repeat scroll 0 0;
+  background: #292929 none repeat scroll 0 0;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   display: inline;
   border-radius: 4px;
@@ -1009,6 +775,7 @@ input[type="tel"], input[type="number"],
 input[type="search"],
 textarea.materialize-textarea {
   border-color: #ccc;
+  color: #fff;pla
 }
 
 
@@ -1042,7 +809,7 @@ textarea.materialize-textarea {
 
 
 .footer-bottom{
-  background-color: #fff;
+  background-color: #292929;
   display: inline;
   float: left;
   width: 100%;
@@ -1179,149 +946,6 @@ textarea.materialize-textarea {
 
 .overlay-content .post-comment:hover{
   color: #fff !important;
-}
-
-
-/*--------------------*/
-/* SINGLE BLOG */
-/*--------------------*/
-
-
-.blog-head h1 {
-  line-height: 75px;
-}
-
-
-.blog-archive{
-  padding-top: 22px;
-}
-
-
-.blog-archive .card-image{
-  height: 350px;
-}
-
-
-.blog-archive .card-image img{
-  height: 100%;
-}
-
-#blog-details{
-  background-color: #fafafa;
-  display: inline-block;
-  float: left;
-  min-height: 500px;
-  width: 100%;
-}
-
-
-.blog-content{  
-  display: inline;
-  float: left;  
-  width: 100%;
-}
-
-
-.blog-image{
-  display: inline;  
-  float: left;
-  width: 100%;
-}
-
-
-.blog-image img{
-  width: 100%;  
-}
-
-
-.blog-content h1 {
-  font-size: 40px;
-  margin-bottom: 10px;
-  line-height: 43px;
-  margin-top: 10px;
-}
-
-
-.blog-content h2{
-  font-size: 35px;
-  margin-bottom: 10px;
-  line-height: 37px;
-  margin-top: 10px;
-}
-
-
-.blog-content h3 {
-  font-size: 26px;
-  line-height: 28px;
-  margin-bottom: 5px;
-  margin-top: 5px;
-}
-
-
-.blog-content h4 {
-  font-size: 20px;
-  line-height: 23px;
-  margin-bottom: 5px;
-  margin-top: 5px;
-}
-
-
-.blog-content h5{
-  font-size: 16px;
-  line-height: 18px;
-  margin-top: 5px;
-}
-
-
-.blog-content blockquote {
-  background-color: #fff;
-  padding: 10px;
-}
-
-
-.blog-content blockquote p {
-  color: #555;
-  font-size: 17px;
-  margin: 0px;
-}
-
-
-.blog-content cite {
-  font-size: 13px;
-  font-style: italic;
-}
-
-
-.blog-content ul,.blog-content ol{
-  padding-left: 25px;
-}
-
-
-.blog-content ul>li{  
-  list-style: disc;
-  color: #555;
-} 
-
-
-.blog-content ul>li ul li{
-  list-style: circle;
-}
-
-
-.blog-content ul>li ul li ul>li{
-  list-style: square;
-}
-
-
-.blog-content-bottom {
-  border-bottom: 1px solid #ccc;
-  border-top: 1px solid #ccc;
-  display: inline;
-  float: left;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  padding-top: 16px;
-  width: 100%;
 }
 
 
@@ -1790,27 +1414,6 @@ textarea.materialize-textarea {
 }
 
 
-.blog-navigation {
-  display: inline;
-  float: left;
-  margin-top: 22px;
-  width: 100%;
-}
-
-
-.blog-navigation-left{
-  display: inline;
-  float: left;
-  
-}
-
-
-.blog-navigation-right{
-  display: inline;
-  float: right;  
-}
-
-
 .prev-post {
   border: 1px solid #ccc;
   color: #222;
@@ -1876,7 +1479,6 @@ textarea.materialize-textarea {
   #portfolio-list .mix {height: 240px;}
   .prev2 {margin-top: 24.5%;left: -12%;}
   .next2 {margin-top: 24.5%;right: -8.5%;}
-  .blog-post-content h2, .blog-post-content h2 a {font-size: 16px;}
   .card .card-content p {font-size: 13px;}
   .card .card-action a {margin-right: 0px;}
   .contact-map{height: 484px;}
@@ -1894,7 +1496,6 @@ textarea.materialize-textarea {
   .home-title {font-size: 35px;}
   .single-facts {padding: 15px;}
   .counter {font-size: 40px;}
-  #blog-details{ display: table;}
   .left-sidebar{display: table-footer-group;float: none !important;}
   .swith-to-left{display: table-header-group;float: none !important;}
   .header-title {font-size: 30px;}
@@ -1906,14 +1507,6 @@ textarea.materialize-textarea {
   .cat-item a {font-size: 12px;}
   .archives li a {font-size: 12px;}
   .tagcloud a {font-size: 12px;}
-  .blog-content h1 {font-size: 35px;  }
-  .blog-content h2{font-size: 30px;}
-  .blog-content h3 {font-size: 21px;}
-  .blog-content h4 {font-size: 18px;}
-  .blog-content h5{font-size: 15px;}
-  .blog-content p{font-size: 13px;}
-  .blog-content blockquote p {font-size: 15px;}
-  .blog-post-content h2, .blog-post-content h2 a {font-size: 15px;}
   .related-post h2 {font-size: 25px;}
   .single-meta {font-size: 12px;}
   .card .card-content p {font-size: 11px;}
@@ -1968,7 +1561,6 @@ textarea.materialize-textarea {
   .archives li a {font-size: 14px;}
   .tagcloud a {font-size: 14px;}
   .tag-area {margin-top: 20px;}
-  .blog-post-content h2, .blog-post-content h2 a {font-size: 16px;}
   .related-post h2 {font-size: 25px;}
   .single-meta {font-size: 13px;}
   .card .card-content p {font-size: 13px;}
@@ -1978,7 +1570,6 @@ textarea.materialize-textarea {
   .author-name {font-size: 18px;}
   .pagination li {height: 25px;width: 25px;}
   .custom-pagination li a {font-size: 12px;line-height: 25px;}
-  .blog-head h1 {font-size: 30px;}
 
 }
 
@@ -1991,8 +1582,6 @@ textarea.materialize-textarea {
   .next{margin-top: 55%;}
   .prev1 { margin-top: 55%;}
   .next1{margin-top: 55%;}
-  .testimonial-img {margin-bottom: 15px;width: 100%;}
-  .testimonial-content {padding-left: 15px;width: 100%;}
   .prev2 { margin-top: 70%;}
   .next2{margin-top: 70%;}
   .copyright-info { font-size: 12px;}
@@ -2000,9 +1589,7 @@ textarea.materialize-textarea {
   .call-to-about {left: 40.7%;bottom: -145px;}
   .up-btn {left: 40.7%;}
   .personal-information > h3 {font-size: 18px;}
-  .reply-btn {font-size: 12px;padding: 6px 8px;}
-  .blog-content h2 {margin-bottom: 0;}
-  .blog-archive .card-image {height: 200px;}
+  .reply-btn {font-size: 12px;padding: 6px 8px;}blo
   .pagination li {width: 25px;margin: 0 5px;}
 
 }
@@ -2018,7 +1605,6 @@ textarea.materialize-textarea {
   .next{margin-top: 57%;}
   .prev1 { margin-top: 57%;}
   .next1{margin-top: 57%;}
-  .testimonial-content p {font-size: 12px;}
   .prev2 { margin-top: 77%;}
   .next2{margin-top: 77%;}
   .call-to-about {bottom: -120px; left: 39%;}
