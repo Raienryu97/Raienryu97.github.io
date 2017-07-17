@@ -1,26 +1,26 @@
-/**	
+/**
 	* Template Name: MU Material
-	* Version: 1.0	
+	* Version: 1.0
 	* Template Scripts
 	* Author: MarkUps
 	* Author URI: http://www.markups.io/
 
 	Custom JS
-	
+
 	1. MOBILE MENU
 	2. EXPERIENCE SLIDER (Owl Carousel)
 	3. EDUCATION SLIDER (Owl Carousel)
 	4. PORTFOLIO SLIDER
 	5. COUNTER
-	6. TESTIMONIAL SLIDER (Owl Carousel)	
+	6. TESTIMONIAL SLIDER (Owl Carousel)
 	7. MENU SMOOTH SCROLLING
 	8. PRELOADER
 	9. CALL TO ABOUT
-	10. BOTTOM TO UP 
+	10. BOTTOM TO UP
 	11. PARALLAX HEADER
 	12. HIRE ME SCROLL
-	
-	
+
+
 **/
 
 jQuery(function($){
@@ -31,12 +31,12 @@ jQuery(function($){
 	/* ----------------------------------------------------------- */
 
     jQuery(".button-collapse").sideNav();
-    
+
 	/* ----------------------------------------------------------- */
 	/*  2. Experience SLider(Owl Carousel)
 	/* ----------------------------------------------------------- */
 
-	var owl = $("#owl-carousel"); 
+	var owl = $("#owl-carousel");
     owl.owlCarousel({
         items : 4, //4 items above 1024px browser width
         itemsDesktop : [1024,3], //3 items between 1024px and 901px
@@ -58,7 +58,7 @@ jQuery(function($){
 	/*  3. EDUCATION SLIDER (Owl Carousel)
 	/* ----------------------------------------------------------- */
 
-	var owl1 = $("#owl-carousel1"); 
+	var owl1 = $("#owl-carousel1");
 	owl1.owlCarousel({
 	    items : 4, //4 items above 1024px browser width
 	    itemsDesktop : [1024,3], //3 items between 1024px and 901px
@@ -74,12 +74,12 @@ jQuery(function($){
 	jQuery(".prev1").click(function(){
 	    owl1.trigger('owl.prev');
 	});
-	
+
     /* ----------------------------------------------------------- */
 	/*  4. PORTFOLIO SLIDER
 	/* ----------------------------------------------------------- */
 
-	jQuery('#portfolio-list').mixItUp();	
+	jQuery('#portfolio-list').mixItUp();
 
 	/* ----------------------------------------------------------- */
 	/*  5. COUNTER
@@ -88,13 +88,13 @@ jQuery(function($){
 	jQuery('.counter').counterUp({
         delay: 10,
         time: 1000
-    });	  
+    });
 
 	/* ----------------------------------------------------------- */
 	/*  6. TESTIMONIAL SLIDER (Owl Carousel)
 	/* ----------------------------------------------------------- */
 
-	var owl2 = $("#owl-carousel2"); 
+	var owl2 = $("#owl-carousel2");
     owl2.owlCarousel({
         items : 2, //4 items above 1024px browser width
         itemsDesktop : [1024,2], //3 items between 1024px and 901px
@@ -111,12 +111,12 @@ jQuery(function($){
     jQuery(".prev2").click(function(){
         owl2.trigger('owl.prev');
     });
-	 
+
 
 	/* ----------------------------------------------------------- */
 	/*  7. MENU SMOOTH SCROLLING
-	/* ----------------------------------------------------------- */ 
-	
+	/* ----------------------------------------------------------- */
+
 	//MENU SCROLLING WITH ACTIVE ITEM SELECTED
 
 	// Cache selectors
@@ -136,7 +136,7 @@ jQuery(function($){
 	menuItems.click(function(e){
 	  var href = $(this).attr("href"),
 	      offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+15;
-	  jQuery('html, body').stop().animate({ 
+	  jQuery('html, body').stop().animate({
 	      scrollTop: offsetTop
 	  }, 900);
 	  e.preventDefault();
@@ -146,7 +146,7 @@ jQuery(function($){
 	jQuery(window).scroll(function(){
 	   // Get container scroll position
 	   var fromTop = $(this).scrollTop()+topMenuHeight;
-	   
+
 	   // Get id of current scroll item
 	   var cur = scrollItems.map(function(){
 	     if ($(this).offset().top < fromTop)
@@ -155,30 +155,30 @@ jQuery(function($){
 	   // Get the id of the current element
 	   cur = cur[cur.length-1];
 	   var id = cur && cur.length ? cur[0].id : "";
-	   
+
 	   if (lastId !== id) {
 	       lastId = id;
 	       // Set/remove active class
 	       menuItems
 	         .parent().removeClass("active")
 	         .end().filter("[href=#"+id+"]").parent().addClass("active");
-	   }           
+	   }
 	})
-    
+
 	/* ----------------------------------------------------------- */
-	/*  8. PRELOADER 
-	/* ----------------------------------------------------------- */ 
+	/*  8. PRELOADER
+	/* ----------------------------------------------------------- */
 
 	jQuery(window).load(function() { // makes sure the whole site is loaded
       $('.progress').fadeOut(); // will first fade out the loading animation
       $('#preloader').delay(100).fadeOut('slow'); // will fade out the white DIV that covers the website.
       $('body').delay(100).css({'overflow':'visible'});
     })
-	  
+
 	/* ----------------------------------------------------------- */
 	/* 9. CALL TO ABOUT
-	/* ----------------------------------------------------------- */ 
-	
+	/* ----------------------------------------------------------- */
+
 	jQuery(".call-to-about").click(function() {
     jQuery('html,body').animate({
         scrollTop: $("#about").offset().top},
@@ -187,7 +187,7 @@ jQuery(function($){
 
 	/* ----------------------------------------------------------- */
 	/* 10. BOTTOM TO UP
-	/* ----------------------------------------------------------- */ 
+	/* ----------------------------------------------------------- */
 
 	jQuery(".up-btn").click(function() {
     jQuery('html,body').animate({
@@ -197,13 +197,13 @@ jQuery(function($){
 
 	/* ----------------------------------------------------------- */
 	/* 11. PARALLAX HEADER
-	/* ----------------------------------------------------------- */ 
+	/* ----------------------------------------------------------- */
 
 	jQuery('.parallax').parallax();
 
 	/* ----------------------------------------------------------- */
 	/* 12. HIRE ME SCROLL
-	/* ----------------------------------------------------------- */ 
+	/* ----------------------------------------------------------- */
 
 	jQuery(".hire-me-btn").click(function(e) {
 		e.preventDefault();
@@ -212,5 +212,95 @@ jQuery(function($){
         'slow');
 	});
 
-	
+
 });
+
+
+function initMap() {
+	// Styles a map in night mode.
+	var map = new google.maps.Map(document.getElementById('map'), {
+		center: {lat: 17.3921519, lng: 78.4521496},
+		zoom: 12,
+		styles:
+		[
+			{elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+			{elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+			{elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+			{
+				featureType: 'administrative.locality',
+				elementType: 'labels.text.fill',
+				stylers: [{color: '#d59563'}]
+			},
+			{
+				featureType: 'poi',
+				elementType: 'labels.text.fill',
+				stylers: [{color: '#d59563'}]
+			},
+			{
+				featureType: 'poi.park',
+				elementType: 'geometry',
+				stylers: [{color: '#263c3f'}]
+			},
+			{
+				featureType: 'poi.park',
+				elementType: 'labels.text.fill',
+				stylers: [{color: '#6b9a76'}]
+			},
+			{
+				featureType: 'road',
+				elementType: 'geometry',
+				stylers: [{color: '#38414e'}]
+			},
+			{
+				featureType: 'road',
+				elementType: 'geometry.stroke',
+				stylers: [{color: '#212a37'}]
+			},
+			{
+				featureType: 'road',
+				elementType: 'labels.text.fill',
+				stylers: [{color: '#9ca5b3'}]
+			},
+			{
+				featureType: 'road.highway',
+				elementType: 'geometry',
+				stylers: [{color: '#746855'}]
+			},
+			{
+				featureType: 'road.highway',
+				elementType: 'geometry.stroke',
+				stylers: [{color: '#1f2835'}]
+			},
+			{
+				featureType: 'road.highway',
+				elementType: 'labels.text.fill',
+				stylers: [{color: '#f3d19c'}]
+			},
+			{
+				featureType: 'transit',
+				elementType: 'geometry',
+				stylers: [{color: '#2f3948'}]
+			},
+			{
+				featureType: 'transit.station',
+				elementType: 'labels.text.fill',
+				stylers: [{color: '#d59563'}]
+			},
+			{
+				featureType: 'water',
+				elementType: 'geometry',
+				stylers: [{color: '#17263c'}]
+			},
+			{
+				featureType: 'water',
+				elementType: 'labels.text.fill',
+				stylers: [{color: '#515c6d'}]
+			},
+			{
+				featureType: 'water',
+				elementType: 'labels.text.stroke',
+				stylers: [{color: '#17263c'}]
+			}
+		]
+	});
+}

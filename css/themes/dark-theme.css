@@ -11,7 +11,7 @@ a {
 }
 
 .side-nav li:hover{
-  background-color: #d7bc02;  
+  background-color: #d7bc02;
 }
 .btn ,.btn-large{
   background-color: #d7bc02;
@@ -75,7 +75,7 @@ a {
 }
 
 .footer-top{
-  background-color:#303030; 
+  background-color:#303030;
 }
 input[type="text"]:focus:not([readonly]) + label,
 input[type="password"]:focus:not([readonly]) + label,
@@ -105,7 +105,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
   box-shadow: 0 1px 0 0 #d7bc02;
 }
 .submit-btn{
-  color: #d7bc02;  
+  color: #d7bc02;
 }
 .submit-btn:hover,
 .submit-btn:focus{
@@ -127,13 +127,13 @@ textarea.materialize-textarea:focus:not([readonly]) {
   background-color: #d7bc02 !important;
 }
 .reply-btn:hover{
-  background-color: #d7bc02; 
+  background-color: #d7bc02;
 }
 .pagination li.active{
   background-color: #d7bc02;
 }
 .card .card-action a {
-  color: #d7bc02;  
+  color: #d7bc02;
 }
 .tagcloud a:hover,
 .tagcloud a:focus{
@@ -148,11 +148,11 @@ textarea.materialize-textarea:focus:not([readonly]) {
   background-color: #d7bc02;
 }
 .submit-btn{
-  color: #d7bc02;  
+  color: #d7bc02;
 }
 .side-nav li:hover,
 .side-nav li.active {
-  background-color: #d7bc02; 
+  background-color: #d7bc02;
 }
 .progress .indeterminate {
   background-color: #d7bc02;
@@ -162,3 +162,9 @@ textarea.materialize-textarea:focus:not([readonly]) {
 Template Design By MarkUps.
 Author URI : http://www.markups.io/
 ========================================*/
+
+/* Always set the map height explicitly to define the size of the div
+* element that contains the map. */
+#map {
+  height: 100%;
+}
