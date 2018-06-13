@@ -4822,9 +4822,10 @@ span.badge {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0 0.75rem; }
+    @media only screen and (min-width : 500px) {
     .row .col.s1 {
       width: 8.33333%;
-      margin-left: 0; }
+      margin-left: 0; }}
     .row .col.s2 {
       width: 16.66667%;
       margin-left: 0; }
